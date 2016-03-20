@@ -1,5 +1,5 @@
-# Sneizdecker's portfolio site (source)
+# Sneizdecker's portfolio site (source code)
 
-Source code of my portfolio site: http://sneizdecker.github.io/
+The source code of [my portfolio site](http://sneizdecker.github.io/)
 
-The project was built using [CSSSR Project Template](https://github.com/CSSSR/csssr-project-template)
+This project was built using [CSSSR Project Template](https://github.com/CSSSR/csssr-project-template)
