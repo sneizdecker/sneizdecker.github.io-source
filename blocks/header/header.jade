@@ -1,0 +1,11 @@
+include ../logo/logo
+include ../menu/menu
+include ../hamburger/hamburger
+
+mixin header()
+	+b('header').header&attributes(attributes)
+		+logo.__logo
+		+e('a').github(href='https://github.com/sneizdecker' title='Me on Github' target='_blank')
+		+e('nav').menu
+			+menu(getData('menu'))
+		+hamburger.__hamburger

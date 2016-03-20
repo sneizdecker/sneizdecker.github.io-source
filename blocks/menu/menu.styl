@@ -1,0 +1,29 @@
+.menu
+	font-size 0
+	text-transform uppercase
+
+	&__item
+		display block
+
+		+above(530px)
+			display inline-block
+
+	&__link
+		padding-x 10px
+		padding-top 35px
+		display block
+		height 100px
+		font-family built-titling
+		font-size 24px
+		line-height 24px
+		text-decoration none
+		color #8b8b8b
+		border-top 4px solid transparent
+		transition-duration .3s
+		transition-timing-function ease-out
+		transition-property color, background-color, border-top
+
+		&:hover
+			color #000
+			background-color #ededed
+			border-top 4px solid #c83737

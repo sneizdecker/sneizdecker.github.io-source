@@ -1,0 +1,6 @@
+mixin menu(menu)
+	+b('ul').menu&attributes(attributes)
+		each item in menu
+			+e('li').item
+				+e('a').link(href='#{ item[0] }')
+					| #{ item[1] }

@@ -1,0 +1,225 @@
+/*
+Stylus variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon_home_width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon_home = x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet = width height image $spritesheet_sprites;
+*/
+$cssico_name = 'cssico';
+$cssico_x = 0px;
+$cssico_y = 81px;
+$cssico_offset_x = 0px;
+$cssico_offset_y = -81px;
+$cssico_width = 82px;
+$cssico_height = 92px;
+$cssico_total_width = 290px;
+$cssico_total_height = 255px;
+$cssico_image = '../images/sprites/basic.png';
+$cssico = 0px 81px 0px -81px 82px 92px 290px 255px '../images/sprites/basic.png' 'cssico';
+$github_name = 'github';
+$github_x = 190px;
+$github_y = 181px;
+$github_offset_x = -190px;
+$github_offset_y = -181px;
+$github_width = 24px;
+$github_height = 24px;
+$github_total_width = 290px;
+$github_total_height = 255px;
+$github_image = '../images/sprites/basic.png';
+$github = 190px 181px -190px -181px 24px 24px 290px 255px '../images/sprites/basic.png' 'github';
+$htmlico_name = 'htmlico';
+$htmlico_x = 90px;
+$htmlico_y = 81px;
+$htmlico_offset_x = -90px;
+$htmlico_offset_y = -81px;
+$htmlico_width = 82px;
+$htmlico_height = 92px;
+$htmlico_total_width = 290px;
+$htmlico_total_height = 255px;
+$htmlico_image = '../images/sprites/basic.png';
+$htmlico = 90px 81px -90px -81px 82px 92px 290px 255px '../images/sprites/basic.png' 'htmlico';
+$jsico_name = 'jsico';
+$jsico_x = 180px;
+$jsico_y = 81px;
+$jsico_offset_x = -180px;
+$jsico_offset_y = -81px;
+$jsico_width = 82px;
+$jsico_height = 92px;
+$jsico_total_width = 290px;
+$jsico_total_height = 255px;
+$jsico_image = '../images/sprites/basic.png';
+$jsico = 180px 81px -180px -81px 82px 92px 290px 255px '../images/sprites/basic.png' 'jsico';
+$linkedin_name = 'linkedin';
+$linkedin_x = 82px;
+$linkedin_y = 181px;
+$linkedin_offset_x = -82px;
+$linkedin_offset_y = -181px;
+$linkedin_width = 28px;
+$linkedin_height = 29px;
+$linkedin_total_width = 290px;
+$linkedin_total_height = 255px;
+$linkedin_image = '../images/sprites/basic.png';
+$linkedin = 82px 181px -82px -181px 28px 29px 290px 255px '../images/sprites/basic.png' 'linkedin';
+$logo_left_name = 'logo-left';
+$logo_left_x = 0px;
+$logo_left_y = 181px;
+$logo_left_offset_x = 0px;
+$logo_left_offset_y = -181px;
+$logo_left_width = 74px;
+$logo_left_height = 74px;
+$logo_left_total_width = 290px;
+$logo_left_total_height = 255px;
+$logo_left_image = '../images/sprites/basic.png';
+$logo_left = 0px 181px 0px -181px 74px 74px 290px 255px '../images/sprites/basic.png' 'logo-left';
+$logo_right_name = 'logo-right';
+$logo_right_x = 0px;
+$logo_right_y = 0px;
+$logo_right_offset_x = 0px;
+$logo_right_offset_y = 0px;
+$logo_right_width = 290px;
+$logo_right_height = 73px;
+$logo_right_total_width = 290px;
+$logo_right_total_height = 255px;
+$logo_right_image = '../images/sprites/basic.png';
+$logo_right = 0px 0px 0px 0px 290px 73px 290px 255px '../images/sprites/basic.png' 'logo-right';
+$mail_name = 'mail';
+$mail_x = 118px;
+$mail_y = 181px;
+$mail_offset_x = -118px;
+$mail_offset_y = -181px;
+$mail_width = 28px;
+$mail_height = 29px;
+$mail_total_width = 290px;
+$mail_total_height = 255px;
+$mail_image = '../images/sprites/basic.png';
+$mail = 118px 181px -118px -181px 28px 29px 290px 255px '../images/sprites/basic.png' 'mail';
+$skype_name = 'skype';
+$skype_x = 154px;
+$skype_y = 181px;
+$skype_offset_x = -154px;
+$skype_offset_y = -181px;
+$skype_width = 28px;
+$skype_height = 29px;
+$skype_total_width = 290px;
+$skype_total_height = 255px;
+$skype_image = '../images/sprites/basic.png';
+$skype = 154px 181px -154px -181px 28px 29px 290px 255px '../images/sprites/basic.png' 'skype';
+$sp_basic_width = 290px;
+$sp_basic_height = 255px;
+$sp_basic_image = '../images/sprites/basic.png';
+$sp_basic_sprites = $cssico $github $htmlico $jsico $linkedin $logo_left $logo_right $mail $skype;
+$sp_basic = 290px 255px '../images/sprites/basic.png' $sp_basic_sprites;
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+// The list formatted variables are intended for mixins like `retinaSprite` and `retinaSprites`.
+
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  spriteWidth($icon_home)
+}
+
+.icon-email {
+  sprite($icon_email)
+}
+
+Here are example usages in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+`display: inline-block` sprite:
+<img class="icon-home" />
+*/
+spriteWidth($sprite) {
+  width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+  height: $sprite[5];
+}
+
+spritePosition($sprite) {
+  background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+  background-image: url($sprite[8]);
+}
+
+sprite($sprite) {
+  spriteImage($sprite)
+  spritePosition($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+}
+
+
+// The `retinaSprite` mixin sets up rules and a media query for a sprite/retina sprite.
+// It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon_home_group = 'icon-home' $icon_home $icon_home_2x;
+//
+// .icon-home {
+//     retinaSprite($icon_home_group)
+// }
+
+
+spriteBackgroundSize($sprite) {
+	background-size $sprite[6] $sprite[7]
+}
+
+retinaSprite($retina_group) {
+	$normal_sprite = $retina_group[1]
+	$retina_sprite = $retina_group[2]
+	sprite($normal_sprite)
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+				 (min-resolution: 192dpi) {
+		spriteImage($retina_sprite)
+		spriteBackgroundSize($normal_sprite)
+	}
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of Stylus
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+sprites($spritesheet_sprites);
+*/
+sprites($sprites) {
+  for $sprite in $sprites {
+    $sprite_name = $sprite[9];
+    .{$sprite_name} {
+      sprite($sprite);
+    }
+  }
+}
+
+// The `retinaSprites` mixin generates a CSS rule and media query for retina groups
+// This yields the same output as CSS retina template but can be overridden in Stylus
+//
+// retinaSprites($retina_groups)
+
+retinaSprites($retina_groups) {
+	for $retina_group in $retina_groups {
+		$sprite_name = $retina_group[0];
+		.{$sprite_name} {
+			retinaSprite $retina_group
+		}
+	}
+}

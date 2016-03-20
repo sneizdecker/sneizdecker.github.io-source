@@ -1,0 +1,78 @@
+include /blocks/hero/hero
+include /blocks/content/content
+include /blocks/tech-icons/tech-icons
+include /blocks/title/title
+include /blocks/big-title/big-title
+include /blocks/button/button
+include /blocks/boxes/boxes
+include /blocks/par/par
+include /blocks/skills/skills
+include /blocks/link/link
+
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = "Sneizdecker's portfolio";
+
+block content
+
+	+e('section').item_hero
+		+hero
+			+tech-icons.__tech-icons
+			+big-title
+				| Solid Front-end development
+			+title.__title
+				| Special approach - modern solutions - high quality work
+			+button(href='#myWorks')
+				| Check my works
+
+	+e('section').item
+		+e.center
+			+title._box
+				| My latest works
+
+			+boxes(getData('boxes'))
+
+	+e('section').item
+		+e.center
+			+title._box
+				| What can I do for you?
+			+content
+				+par
+					| I can provide clean, adaptive, semantic, and valid coded HTML/CSS layouts from your PSD-design.<br>
+					| My main skills and workflow instruments that I use are listed bellow.
+
+				+skills(getData('skills'))
+
+	+e('section').item
+		+e.center
+			+title._box
+				| Contact me
+
+			+content
+				+par
+					| I personally prefer to use e-mail for communication, but feel free to contact me <br>
+					| either via Skype or Linkedin also. I will reply within 24 hours for sure.
+
+				+par
+					+e('i').mail
+					| Email address:
+					+link(href='mailto:sneizdecker@gmail.com')
+						| sneizdecker@gmail.com
+
+				+par
+					+e('i').skype
+					| Skype ID:
+					+link(href='skype:sneizdecker')
+						| sneizdecker
+
+				+par
+					+e('i').linkedin
+					| Linkedin profile: coming soon
+
+				+par
+					| I will be glad to help with your projects!
+
+				+par
+					| Best regards,<br>
+					| Vyacheslav S.

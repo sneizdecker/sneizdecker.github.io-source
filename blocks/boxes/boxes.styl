@@ -1,0 +1,53 @@
+.boxes
+	display flex
+	flex-wrap wrap
+	margin-bottom -40px
+	padding-y 20px
+	justify-content space-around
+	font-size 0
+
+	&__item
+		position relative
+		margin-bottom 40px
+		background-color #0d619f
+		border-radius 3px
+		transition-duration .3s
+		transition-timing-function ease-out
+		transition-property background-color
+
+		&:hover
+			background-color #0b5083
+
+	&__title
+		padding 10px
+
+	&__overlay
+		position absolute
+		display flex
+		justify-content center
+		align-items center
+		size(270px, 184px)
+		background-color rgba(16, 115, 187, .8)
+		opacity 0
+		border-top-right-radius 3px
+		border-top-left-radius 3px
+		transition-duration .3s
+		transition-timing-function ease-out
+		transition-property opacity
+
+		&:hover
+			opacity 1
+
+	&__picture
+		size(270px, 184px)
+		border-top-left-radius 3px
+		border-top-right-radius 3px
+
+	&__picture,
+	&__overlay
+
+		+above(355px)
+			size(310px, 212px)
+
+		+at(1024px)
+			size(290px, 198px)

@@ -1,0 +1,11 @@
+include /blocks/small-title/small-title
+include /blocks/par/par
+
+mixin skills(skills)
+	+b.skills&attributes(attributes)
+		each item in skills
+			+e.item
+				+small-title
+					| #{ item[0] }
+				+par._small
+					| #{ item[1] }

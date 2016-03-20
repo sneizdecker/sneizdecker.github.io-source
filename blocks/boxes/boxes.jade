@@ -1,0 +1,17 @@
+include /blocks/button/button
+include /blocks/small-title/small-title
+include /blocks/par/par
+
+mixin boxes(boxes)
+	+b.boxes&attributes(attributes)
+		each item in boxes
+			+e.item
+				+e.overlay
+					+button._small(href='#{ item[0] }')
+						| View project
+				+e('img').picture(src='assets/images/temp/#{ item[1] }')
+				+e.title
+					+small-title
+						| #{ item[2] }
+					+par._small
+						| #{ item[3] }

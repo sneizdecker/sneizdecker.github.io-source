@@ -1,0 +1,14 @@
+[
+	["HTML5", "Markup language used for structuring and presenting content on the World Wide Web."],
+	["CSS3", "The latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1."],
+	["JavaScript", "High-level, dynamic, untyped, and interpreted programming language."],
+	["JQuery", "Cross-platform JavaScript library designed to simplify the client-side scripting of HTML."],
+	["Pug (Jade)", "Bust, elegant, feature rich template engine for Node.js."],
+	["Stylus", "Dynamic stylesheet language that is compiled into Cascading Style Sheets (CSS)."],
+	["Gulp", "JavaScript task runner that lets automate tasks."],
+	["BEM", "Methodology, that helps to achieve reusable components and code sharing in the front-end."],
+	["Bootstrap", "Front-end framework for faster and easier web development."],
+	["Mobile-First", "The technique of creating mobile websites first and then progressively enhancing them to create the desktop version."],
+	["GitHub", "A free and open source distributed version control system."],
+	["Linux command line", "I use Linux (Linux Mint) and really love it."]
+]

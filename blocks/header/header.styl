@@ -1,0 +1,34 @@
+.header
+	margin-x auto
+	padding-x 15px
+	max-width 1130px
+	clearfix()
+
+	&__logo
+		margin-top 14px
+		float left
+
+	&__github
+		margin-top 37px
+		margin-left 20px
+		display block
+		sprite($github)
+		float right
+		opacity .4
+		transition-duration .3s
+		transition-timing-function ease-out
+		transition-property opacity
+
+		&:hover
+			opacity 1
+
+	&__menu
+		display none
+
+		+above(905px)
+			display block
+			float right
+
+	&__hamburger
+		margin-top 14px
+		float right
