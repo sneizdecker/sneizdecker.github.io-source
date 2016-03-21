@@ -17,6 +17,3 @@ $('.hamburger').click(function () {
 	$(this).toggleClass('hamburger_active');
 	$('.mobile-menu').toggleClass('mobile-menu_active');
 });
-
-slimscroll();
-fullpage();
