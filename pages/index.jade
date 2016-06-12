@@ -16,7 +16,7 @@ block head
 
 block content
 
-	+e('section').item_hero
+	+e('section')#homepage.item_hero
 		+hero
 			+tech-icons.__tech-icons
 			+big-title
@@ -26,25 +26,25 @@ block content
 			+button(href='#myWorks')
 				| Check my works
 
-	+e('section').item
+	+e('section')#myWorks.item
 		+e.center
 			+title._box
 				| My latest works
 
 			+boxes(getData('boxes'))
 
-	+e('section').item
+	+e('section')#mySkills.item
 		+e.center
 			+title._box
 				| What can I do for you?
 			+content
 				+par
 					| I can provide clean, adaptive, semantic, and valid coded HTML/CSS layouts from your PSD-design.<br>
-					| My main skills and workflow instruments that I use are listed bellow.
+					| My main skills and front-end tools that I really like to use are listed bellow.
 
 				+skills(getData('skills'))
 
-	+e('section').item
+	+e('section')#contactMe.item
 		+e.center
 			+title._box
 				| Contact me
